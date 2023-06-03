@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 1</title>
+  <style>
+    /* CSS styles */
+    body
+   {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header 
+   {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section 
+   {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .container 
+   {
+      display: flex;
+      justify-content: center;
+    }
+
+    .column 
+   {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .footer 
+   {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+     .column 
+   {
+     float: left;
+     width: 33.33%;
+     padding: 5px;
+   }
+     .row::after 
+   {
+      content: "";
+      clear: both;
+     display: table;
+   }
+     </style>
+     <style>
+     * {
+     box-sizing: border-box;
+   }
+    .row {
+    display: flex;
+   }
+    .column 
+   {
+    flex: 33.33%;
+    padding: 5px;
+   }
+    </style>
+    </head>
+    <body style="background-color:powderblue;">
+    <header>
+    <h1>HEY!! Welcome to IKEA</h1>
+    <p>Get great furntiures for less prize!!!</p>
+    </header>
+  <section>
+    <h2>About Us</h2>
+    <p>IKEA sells good quality design in low price furniture, bathroom, kitchen and accessories around the world.</p>
+    </p>We believe that “by responding quickly to our customers’ dreams and needs for a better life at home, we will continue to grow our business.</p>
+  </section>
+   <div class="row">
+   <div class="column">
+   <img src="https://i.pinimg.com/736x/6f/0a/6f/6f0a6f25011143818d99b080f2f646e0.jpg" alt="Cupboard" style="width:65%">
+  </div>
+  <div class="column">
+   <img src="https://storage.googleapis.com/kaggle-datasets-images/608654/1090325/8fa6bc669d236713d6bc74fe27202cab/dataset-card.jpg?t=2020-04-19-01-06-07" alt="Book shelf" style="width:75%">
+  </div>
+</div>
+   <section>
+   </p>We would be very pleased to here from your side</p>
+   <h2>Contact Us</h2>
+   <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="email" name="email" placeholder="Your Email">
+      <textarea name="message" placeholder="Enquiry info"></textarea>
+      <button type="submit">Send </button>
+    </form>
+  </section>
+   <footer class="footer">
+    <p>&copy; 2023 @ikea. All rights reserved.</p>
+  </footer>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) 
+   {
+      event.preventDefault();
+      var name = document.getElementsByName('name')[0].value;
+      var email = document.getElementsByName('email')[0].value;
+      var message = document.getElementsByName('message')[0].value;
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+</body>
+</html>
